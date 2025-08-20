@@ -6,6 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Corvia – Zeitarbeitsfirma in Hannover</title>
   <meta name="description" content="Corvia ist Ihr kompetenter Partner für Zeitarbeit und Personalvermittlung in Hannover. Wir verbinden Unternehmen mit qualifizierten Fachkräften – fair, zuverlässig und flexibel.">
+  <!-- Open Graph and Twitter Cards for social sharing -->
+  <meta property="og:title" content="Corvia – Zeitarbeitsfirma in Hannover">
+  <meta property="og:description" content="Flexible Personallösungen für Unternehmen und Bewerber – fair, transparent, zuverlässig.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hubanna889.github.io/corvia/">
+  <meta property="og:image" content="hero-bg.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Schema.org LocalBusiness markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EmploymentAgency",
+    "name": "Corvia",
+    "image": "https://hubanna889.github.io/corvia/hero-bg.png",
+    "url": "https://hubanna889.github.io/corvia/",
+    "telephone": "+49-173-7534161",
+    "email": "mustafa_f@gmx.de",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Mirahof 5c",
+      "postalCode": "30823",
+      "addressLocality": "Garbsen",
+      "addressCountry": "DE"
+    },
+    "areaServed": "Region Hannover"
+  }
+  </script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -33,9 +60,16 @@
   <section id="about">
     <h2>Über Corvia</h2>
     <div class="container">
-      <p>Corvia ist eine Zeitarbeitsfirma aus Hannover, die sich darauf spezialisiert hat, Unternehmen mit qualifizierten Fachkräften zu verbinden. Als moderner Personaldienstleister richten wir uns an zwei Zielgruppen: arbeitssuchende Bewerberinnen und Bewerber sowie Betriebe, die Personalbedarf haben. Unsere Aufgabe besteht darin, den Bewerbungsprozess so einfach wie möglich zu gestalten und beide Seiten effizient zusammenzubringen.</p>
-      <p>Die Tätigkeit der Arbeitnehmerüberlassung unterliegt dem Arbeitnehmerüberlassungsgesetz (AÜG). Nach § 1 Absatz 1 Satz 1 AÜG darf Arbeitnehmerüberlassung nur mit einer entsprechenden Erlaubnis betrieben werden. Wir verfügen über diese Erlaubnis und stehen für eine faire Bezahlung sowie Gleichbehandlung der Beschäftigten, wie es das Gleichbehandlungsgebot des AÜG vorsieht.</p>
-      <p>Unser Unternehmen ist in Hannover zu Hause, arbeitet jedoch regional und überregional mit Betrieben aus verschiedenen Branchen zusammen. Vertrauen, Transparenz und nachhaltige Zusammenarbeit stehen bei uns im Mittelpunkt.</p>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Corvia ist eine Zeitarbeitsfirma aus Hannover, die sich darauf spezialisiert hat, Unternehmen mit qualifizierten Fachkräften zu verbinden. Als moderner Personaldienstleister richten wir uns an zwei Zielgruppen: arbeitssuchende Bewerberinnen und Bewerber sowie Betriebe, die Personalbedarf haben. Unsere Aufgabe besteht darin, den Bewerbungsprozess so einfach wie möglich zu gestalten und beide Seiten effizient zusammenzubringen.</p>
+          <p>Die Tätigkeit der Arbeitnehmerüberlassung unterliegt dem Arbeitnehmerüberlassungsgesetz (AÜG). Nach § 1 Absatz 1 Satz 1 AÜG darf Arbeitnehmerüberlassung nur mit einer entsprechenden Erlaubnis betrieben werden. Wir verfügen über diese Erlaubnis und stehen für eine faire Bezahlung sowie Gleichbehandlung der Beschäftigten, wie es das Gleichbehandlungsgebot des AÜG vorsieht.</p>
+          <p>Unser Unternehmen ist in Hannover zu Hause, arbeitet jedoch regional und überregional mit Betrieben aus verschiedenen Branchen zusammen. Vertrauen, Transparenz und nachhaltige Zusammenarbeit stehen bei uns im Mittelpunkt.</p>
+        </div>
+        <div class="about-image">
+          <img src="workers-illustration.png" alt="Team von Mitarbeiterinnen und Mitarbeitern">
+        </div>
+      </div>
     </div>
   </section>
 
@@ -55,6 +89,29 @@
         <p>Wir beraten Unternehmen in allen Fragen rund um Personalgewinnung, Arbeitsrecht und Employer Branding. Gemeinsam entwickeln wir Strategien, um Ihr Unternehmen als attraktiven Arbeitgeber zu positionieren.</p>
       </div>
     </div>
+  </section>
+
+  <!-- Quick application section -->
+  <section id="apply">
+    <h2>Kurzbewerbung</h2>
+    <p>60 Sekunden – wir rufen zurück.</p>
+    <form action="https://formsubmit.co/mustafa_f@gmx.de" method="POST">
+      <!-- Anti-Spam und Service-Konfiguration -->
+      <input type="hidden" name="_subject" value="Kurzbewerbung über corvia-website">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://hubanna889.github.io/corvia/?ok=1#apply">
+      <div class="apply-grid">
+        <input type="text" name="name" placeholder="Ihr Name" required>
+        <input type="tel" name="telefon" placeholder="Telefon" required>
+        <input type="text" name="gesuchter_job" placeholder="Gesuchter Job / Branche" required>
+        <button type="submit">Rückruf anfordern</button>
+      </div>
+      <small class="privacy-note">
+        Mit „Rückruf anfordern“ willigen Sie in die Verarbeitung Ihrer Angaben zur Kontaktaufnahme ein. Details: <a href="datenschutz.html">Datenschutzerklärung</a>.
+      </small>
+    </form>
   </section>
 
   <section id="why">
@@ -80,14 +137,27 @@
     <div class="container">
       <div class="details">
         <h3>So erreichen Sie uns</h3>
-        <p>Corvia GmbH<br> Musterstraße 1<br> 30159 Hannover</p>
+        <p>Corvia GmbH<br> Mirahof 5c<br> 30823 Garbsen</p>
         <!-- aktualisierte Kontaktinformationen -->
         <p>Telefon: <a href="tel:+491737534161">+49 173 7534161</a><br>
         E‑Mail: <a href="mailto:info@corvia.de">info@corvia.de</a></p>
         <p>Sie haben Fragen zu unseren Leistungen oder benötigen kurzfristig Unterstützung? Sprechen Sie uns an – wir freuen uns auf Ihre Anfrage.</p>
       </div>
       <div class="form">
-        <form action="mailto:info@corvia.de" method="post" enctype="text/plain">
+        <!--
+          Senden von Kontaktformularen per E‑Mail ohne die Zieladresse im sichtbaren Inhalt.
+          Dafür wird der Dienst formsubmit.co verwendet. Die Adresse mustafa_f@gmx.de ist in der
+          Formaktion eingebettet; sie wird nicht auf der Seite angezeigt, ist aber im HTML
+          sichtbar. Wer absolute Anonymität wünscht, benötigt eine serverseitige Lösung.
+        -->
+        <form action="https://formsubmit.co/mustafa_f@gmx.de" method="POST">
+          <!-- Anti-Spam und Service-Konfiguration -->
+          <input type="hidden" name="_subject" value="Kontaktanfrage über corvia-website">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://hubanna889.github.io/corvia/?sent=1#contact">
+          <!-- Felder für den Absender -->
           <input type="text" name="name" placeholder="Ihr Name" required>
           <input type="email" name="email" placeholder="Ihre E‑Mail" required>
           <textarea name="message" rows="6" placeholder="Ihre Nachricht" required></textarea>
